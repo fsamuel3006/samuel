@@ -1,0 +1,27 @@
+@media screen and (max-width: 767px){
+  /* 針對 header 區域 */
+  header.header{
+    width: 100%;
+    text-align: center;
+  }
+
+  /* 針對 banner 區域 */
+  div.banner_bg{
+    min-width: auto;
+  }
+
+  /* 主內容區域 */
+  div.main_container{
+    width: 100%;
+  }
+  div.main_container aside.aside, div.main_container main.main{
+    width: 100%;
+    display: block;
+  }
+
+  /* 針對 footer 區域 */
+  footer.footer{
+    width: 100%;
+    min-width: auto;
+  }
+}

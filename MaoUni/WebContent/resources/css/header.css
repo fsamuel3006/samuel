@@ -1,0 +1,166 @@
+List-style-type ：none /* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */ 
+article, aside, details, figcaption, figure, footer, header, hgroup,
+	menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+/* 	min-height: 1000px; */
+/* 	font-size: 15px; */
+	color: gray;
+	font-family: "Microsoft JhengHei";
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+.Top-Flex { /*這就是上面那條跑來跑去的最開始的底*/
+	position: fixed;
+	background-color: #c19e74;
+	font-weight: bold;
+	padding: 0 50px;
+	height: 170px;
+	width: 100%;
+	display: flex;
+	align-items: top;
+	border-radius: 0px 0px 30px 30px;;
+	z-index: 2;
+}
+
+header {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 180px;
+	display: flex;
+	justify-content: flex-end;
+	transition: 1s;
+	z-index: 999;
+}
+
+
+header.sticky .Top-Flex { /* 這是下拉後的Top-Flex寬度跟顯示 */
+	height: 100px;
+	transition: 2.5s;
+}
+
+.LOOP {
+	display: flex;
+	margin: auto;
+	margin-top: 5px;
+	margin-left: 450px; /*大loog因為看起來沒置中所以是用這個去調到置中的 */
+}
+
+header.sticky .two img {
+	width: 120px;
+	margin-left: 60%; /*小logo用這個移動*/
+}
+
+.two img { /*縮小上頭logo時用*/
+	width: 300px;
+	transition: 1s;
+}
+
+/* ------icon區的css------- */
+.icontrue {
+	display: flex;
+	z-index: 5;
+	margin-right: 5px;
+}
+
+.iconbth { /*給iocn間距*/
+	margin: 7px;
+	z-index: 5;
+}
+
+.icontrue img { /*icontrue下的img全縮小*/
+	width: 20px;
+	border-radius: 4px solid #fff;
+	color: #c19e74;
+	z-index: 5; /*這個一定要加不然會把上下滑動蓋掉，且無法hover差點氣死*/
+}
+
+.iconbth:hover { /*移到icon上時會有半透明的效果*/
+	opacity: 0.5;
+	z-index: 5;
+}
+
+/* ------icon區的css結束------- */
+.shopbody { /*有你來玩那排的導覽列*/
+	position: fixed;
+	display: flex;
+	font-weight: bold;
+	font-size: 13px;
+	width: 100%;
+	justify-content: center; /*這整排置中*/
+	align-items: center; /*讓字在中間的位子*/
+	min-height: 50vh; /* 這一導覽列的高度 */
+	z-index: 2;
+}
+
+header.sticky .shopbody {
+	min-height: 25vh;
+	transition: 2s;
+}
+
+nav {
+	position: relative;
+	display: flex;
+}
+
+nav a {
+	margin: 0 20px;
+	/* 字跟字之間的寬度 */
+	color: white;
+	text-decoration: none; /* 去掉超連結的底線 */
+	height: 5px;
+	width: 100px;
+	/* padding-top: 0px; */
+}

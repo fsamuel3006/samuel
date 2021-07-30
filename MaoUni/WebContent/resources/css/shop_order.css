@@ -1,0 +1,50 @@
+body{
+    font-family: "微軟正黑體";
+}
+.btn-cart{
+    
+    position: relative;
+}
+.dropdown-menu-right{
+    position: absolute;
+    right: 0;
+    left: auto;
+}
+.btn-cart .badge{
+    position: absolute;
+    top: -1px;
+    right: -1px;
+}
+
+.jumbotron-bg{
+    background-image: url(https://images.unsplash.com/photo-1465199549974-7d82de6e2830?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80);
+    background-position: center 0;
+    background-size: cover;
+    min-height: 400px;
+}
+.jumbotron-text{
+    background-color: rgba(0,0,0, 0.25);
+}
+.box-shadow{
+    box-shadow: 0 3px 5px rgba(0,0,0, 0.15);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.box-shadow:hover{
+    transform: scale(1.1,1.1);
+}
+.btn.disabled{
+    pointer-events: none;
+}
+.alert-rounded{
+    border-radius: 50px;
+}
+.card-bottom{
+    border-bottom: solid 1.5px #eee !important;
+}
+.fa-trash-alt{
+    color: #000;
+}
+.fa-trash-alt:hover{
+    color: #f77754;
+}

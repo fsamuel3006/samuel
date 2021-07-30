@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+	<display-name>MaoUni</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>SvcItemServlet</servlet-name>
+		<servlet-class>com.service_items.controller.SvcServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SvcItemServlet</servlet-name>
+		<url-pattern>/svc.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>SvcListServlet</servlet-name>
+		<servlet-class>com.service_list.controller.SvcListServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SvcListServlet</servlet-name>
+		<url-pattern>/svcList.do</url-pattern>
+	</servlet-mapping>
+
+
+
+	<servlet>
+		<servlet-name>GroServlet</servlet-name>
+		<servlet-class>com.groomer.controller.GroServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GroServlet</servlet-name>
+		<url-pattern>/groomer.do</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>WorkServlet</servlet-name>
+		<servlet-class>com.works.controller.WorkServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>WorkServlet</servlet-name>
+		<url-pattern>/work.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>GtraServlet</servlet-name>
+		<servlet-class>com.tracking_groomer.controller.GtrServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>GtraServlet</servlet-name>
+		<url-pattern>/Gtra.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>SchServlet</servlet-name>
+		<servlet-class>com.gschedule.controller.SchServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>SchServlet</servlet-name>
+		<url-pattern>/schedule.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ApmServlet</servlet-name>
+		<servlet-class>com.appointment_form.controller.ApmServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ApmServlet</servlet-name>
+		<url-pattern>/appointment.do</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>ApmdServlet</servlet-name>
+		<servlet-class>com.appointment_form_details.controller.ApmdServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ApmdServlet</servlet-name>
+		<url-pattern>/apmdetails.do</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>GrepServlet</servlet-name>
+		<servlet-class>com.report_grooming.controller.GrepServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>GrepServlet</servlet-name>
+		<url-pattern>/groomingreport.do</url-pattern>
+	</servlet-mapping>
+
+
+
+	<servlet>
+		<servlet-name>NameServlet</servlet-name>
+		<servlet-class>com.chatbox.controller.NameServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>NameServlet</servlet-name>
+		<url-pattern>/chat.do</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>GeocodingServlet</servlet-name>
+		<servlet-class>com.addressGeo.controller.GeocodingServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GeocodingServlet</servlet-name>
+		<url-pattern>/geocoding.do</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>ShoppingCartServlet</servlet-name>
+		<servlet-class>com.shopping_cart.controller.ShoppingCartServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ShoppingCartServlet</servlet-name>
+		<url-pattern>/shoppingcart.do</url-pattern>
+	</servlet-mapping>
+
+
+	<!-- ============================ 國任 ============================ -->
+
+	<!-- 公告註冊******** -->
+	<servlet>
+		<servlet-name>AnnServlet</servlet-name>
+		<servlet-class>com.announcemet.controller.AnnServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AnnServlet</servlet-name>
+		<url-pattern>/announcemet/ann.do</url-pattern>
+	</servlet-mapping>
+
+	<!-- 公告圖片註冊****** -->
+	<servlet>
+		<servlet-name>AnnImgServlet</servlet-name>
+		<servlet-class>com.announcemet.controller.AnnImgServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AnnImgServlet</servlet-name>
+		<url-pattern>/AnnImgServlet</url-pattern>
+	</servlet-mapping>
+
+	<!-- 文章註冊88******** -->
+	<servlet>
+		<servlet-name>ArtServlet</servlet-name>
+		<servlet-class>com.article.controller.ArtServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ArtServlet</servlet-name>
+		<url-pattern>/article/art.do</url-pattern>
+	</servlet-mapping>
+
+	<!-- 文章圖片註冊**8***** -->
+	<servlet>
+		<servlet-name>ArtImgServlet</servlet-name>
+		<servlet-class>com.article.controller.ArtImgServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ArtImgServlet</servlet-name>
+		<url-pattern>/ArtImgServlet</url-pattern>
+	</servlet-mapping>
+
+	<!-- ============================================================== -->
+
+
+
+
+	<!-- ============================ 思瑤 ============================ -->
+   <servlet>
+    <servlet-name>MemberServlet</servlet-name>
+    <servlet-class>com.member.controller.MemberServlet</servlet-class>
+  </servlet> 
+  
+    <servlet-mapping>
+    <servlet-name>MemberServlet</servlet-name>
+    <url-pattern>/member/member.do</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>PetServlet</servlet-name>
+    <servlet-class>com.pet.controller.PetServlet</servlet-class>
+  	</servlet> 
+  
+    <servlet-mapping>
+    <servlet-name>PetServlet</servlet-name>
+    <url-pattern>/pet/pet.do</url-pattern>
+  </servlet-mapping>
+ 
+<!-- 	<filter> -->
+<!-- 		<filter-name>loginFilter</filter-name> -->
+<!-- 		<filter-class>com.Filter.loginFilter</filter-class> -->
+<!-- 	</filter>  -->
+<!--  	<filter-mapping> -->
+<!--  	<filter-name>loginFilter</filter-name> -->
+<!--  	<url-pattern>/front-end/member/memberpage.jsp</url-pattern> -->
+ 	
+<!--  	</filter-mapping> -->
+
+  
+     <servlet>
+    <servlet-name>ObuyServlet</servlet-name>
+    <servlet-class>com.obuy.controller.ObuyServlet</servlet-class>
+  	</servlet> 
+  
+    <servlet-mapping>
+    <servlet-name>ObuyServlet</servlet-name>
+    <url-pattern>/buy/obuy.do</url-pattern>
+  </servlet-mapping>
+  
+  
+       <servlet>
+    <servlet-name>VarietyServlet</servlet-name>
+    <servlet-class>com.variety.controller.VarietyServlet</servlet-class>
+  	</servlet> 
+  
+    <servlet-mapping>
+    <servlet-name>VarietyServlet</servlet-name>
+    <url-pattern>/variety/variety.do</url-pattern>
+  </servlet-mapping>
+  
+     <servlet>
+    <servlet-name>SickListServlet</servlet-name>
+    <servlet-class>com.sicklist.controller.SickListServlet</servlet-class>
+  	</servlet> 
+  
+    <servlet-mapping>
+    <servlet-name>SickListServlet</servlet-name>
+    <url-pattern>/sllist/sllist.do</url-pattern>
+  </servlet-mapping> 
+  
+     <servlet>
+    <servlet-name>CheckmemberServlet</servlet-name>
+    <servlet-class>com.member.controller.CheckmemberServlet</servlet-class>
+  	</servlet> 
+  
+    <servlet-mapping>
+    <servlet-name>CheckmemberServlet</servlet-name>
+    <url-pattern>/check/check.do</url-pattern>
+  </servlet-mapping>   
+  
+
+	<!-- ============================================================== -->
+
+
+
+
+
+</web-app>

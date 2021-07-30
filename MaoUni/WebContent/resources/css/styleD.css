@@ -1,0 +1,25 @@
+
+.btn-cart{
+    
+    position: relative;
+}
+
+.dropdown-menu-right{
+    position: absolute;
+    right: 0;
+    left: auto;
+}
+
+.btn-cart .badge{
+    position: absolute;
+    top: -1px;
+    right: -1px;
+}
+
+
+#dropdownMenuButton:hover{
+	opacity: 0.5;
+    z-index: 5;
+}
+
+

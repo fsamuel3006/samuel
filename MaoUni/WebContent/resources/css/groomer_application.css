@@ -1,0 +1,101 @@
+
+    body {
+      font-size: 10px;
+      color: rgb(255, 255, 255);
+      font-family: "Roboto", monospace, sans-serif;
+    }
+
+    body:before {
+      content: '';
+      background-image: linear-gradient(115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7)), url(https://img-for-hk.wds168.cn/comdata/72144/201901/20190121232005a9b483.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 100vh;
+      position: fixed;
+      display: block;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    #form-wrapper {
+      width: 80%;
+      background: rgba(0, 0, 0, 0.50);
+      margin: auto;
+      margin-top: 50px;'
+      min-height: 500px;
+      border-radius: 20px;
+    }
+
+    #survey-form {
+      padding: 30px 50px;
+    }
+
+    input {
+      font-size: 1.5rem;
+      line-height: 1.6;
+      margin: 10px auto auto 20px;
+      width: 200px;
+    }
+
+    button {
+      background: linear-gradient(to bottom, rgb(108, 61, 236), rgb(108, 44, 228));
+    }
+
+    select {
+      font-size: 2rem;
+      padding: 10px 20px;
+      width: 200px;
+    }
+
+    fieldset {
+      font-size: 1.5rem;
+      margin: 30px auto;
+      border: ;
+    }
+
+    input[type=radio] {
+      line-height: 1;
+      width: auto;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+      max-height: 250px;
+    }
+
+    input[type=text]:focus,
+    select:focus,
+    input[type="number"]:focus,
+    input[type=email]:focus,
+    textarea:focus {
+      border: 1px solid orange;
+      box-shadow: 0 0 30px 5px orange;
+      outline: none;
+    }
+
+    .field-wrapper {
+      margin-bottom: 30px;
+    }
+
+    #name-label,
+    #memId-label,
+    #center-label,
+    #range-label,
+    #license-label,
+    #pcrc-label,
+    #fid-label,
+    #bid-label {
+      font-size: 20px;
+      display: block;
+    }
+
+    img {
+      border: 1px solid red;
+      width: 100%;
+      height: 200px;
+      background-size: cover;
+      background: no-repeat center;
+    }
